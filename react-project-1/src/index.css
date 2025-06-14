@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: whitesmoke;
+  color: black;
+  border: 1px solid black;
+  border-radius: 1rem;
+  margin: 5px;
+}
+
+.header {
+  padding: 0.5rem;
+  background: red;
+  color: aliceblue;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  padding-bottom: 0.5rem;
+}
+
+.nav__img {
+  background-color: red;
+  height: 25px;
+  width: 25px;
+}
+
+.nav__text {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.japan__wrapper{
+  display: flex;
+  gap: 1rem;
+  justify-content:center;
+  align-items:center;
+  margin-left: 2rem;
+}
+.japan__text{
+  display: flex;
+  flex-direction:column;
+  gap: 1rem;
+
+}
+.link__wrapper{
+  display:flex;
+  gap:0.5rem;
+}
+.img__wrapper{
+  height: 168px;
+  width: 125px;
+  overflow:hidden;
+  border-radius:5px;
+  flex-shrink:0;
+
+}
+
+.japan__img{
+  height:100%;
+  width:100%;
+  object-fit: cover;
+}
+.marker__img{
+  width:10px
+}
+
+.japan__date{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size:1rem;
+  font-weight:700;
+}
