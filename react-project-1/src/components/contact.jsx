@@ -5,7 +5,7 @@ export default function Contact(props) {
       <article className="contact__article">
         <img
           src={props.img}
-          alt="Photo of Mr. Whiskerson"
+          alt={props.name}
 
           className="contact__img"
         />
@@ -16,7 +16,7 @@ export default function Contact(props) {
           <p>{props.phone}</p>
         </div>
         <div className="contact__email">
-          <img src="/src/assets/mail-icon.png" alt=",mail icon" />
+          <img src="/src/assets/mail-icon.png" alt="mail icon" />
           <p>{props.email}</p>
         </div>
         </div>

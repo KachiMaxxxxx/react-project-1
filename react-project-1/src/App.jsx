@@ -1,11 +1,10 @@
-import Header from "./components/Header";
-import Japan from "./components/entry";
+
 import Contact from "./components/contact";
+import "./App.css"
 export default function App() {
   return (
     <>
-      <Header />
-      <Japan />
+      <div className="contact__grid">
       <Contact
         img="/src/assets/mr-whiskerson.png"
         name="Mr.Whiskerson"
@@ -30,6 +29,7 @@ export default function App() {
         phone="(+234) 907 455 3935"
         email="pumpkin@catnip.meowww"
       />
+      </div>
     </>
   );
 }
