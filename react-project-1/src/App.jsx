@@ -1,35 +1,20 @@
-
-import Contact from "./components/contact";
-import "./App.css"
+import Joke from "./components/Joke";
+import "./App.css";
 export default function App() {
   return (
     <>
-      <div className="contact__grid">
-      <Contact
-        img="/src/assets/mr-whiskerson.png"
-        name="Mr.Whiskerson"
-        phone="(+234) 907 455 3935"
-        email="mr.whiskaz@catnip.meowww"
+      <Joke
+      setup= "I got my daughter a fridge for her birthday."
+      punchline= "I can't wait to see her face light up when she opens it." 
       />
-      <Contact
-        img="/src/assets/fluffykins.png"
-        name="Mr.FluffyKins"
-        phone="(+234) 907 455 3935"
-        email="fluffy@catnip.meowww"
-      />
-      <Contact
-        img="/src/assets/felix.png"
-        name="Mr.Felix"
-        phone="(+234) 907 455 3935"
-        email="felixxxx@catnip.meowww"
-      />
-      <Contact
-        img="/src/assets/pumpkin.png"
-        name="Mr.Pumpkin"
-        phone="(+234) 907 455 3935"
-        email="pumpkin@catnip.meowww"
-      />
-      </div>
+      <Joke
+      setup= "How did the hacker escape the police?" punchline= "He just ransomware!" />
+      <Joke 
+      setup= " Why don't pirates travel on mountain roads?" punchline= "Scurvy."/>
+      <Joke  setup= "Why do bees stay in the hive in the winter?" punchline= "Swarm."
+/>
+      <Joke 
+      setup= " What's the best thing about Switzerland? "  punchline= " I don't know, but the flag is a big plus!" />
     </>
   );
 }
