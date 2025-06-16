@@ -1,13 +1,10 @@
-export default function Japan() {
+export default function Entry(props) {
   return (
     <article>
       <div className="japan__wrapper">
         <div className="img__wrapper">
-          <img
-            src="https://scrimba.com/links/travel-journal-japan-image-url"
-            alt="Mount Fuji"
-            className="japan__img"
-          />
+          
+          <img src={props.img.src} alt={props.img.alt} className="japan__img" />
         </div>
 
         <div className="japan__text">
@@ -19,22 +16,20 @@ export default function Japan() {
                 className="marker__img"
               />
             </span>
-            <span>JAPAN</span>
+            <span>{props.country}</span>
             <span>
               <a
-                href="https://maps.app.goo.gl/6RLYZDuuuqJ7kNGZ9"
+                href={props.link}
                 className="japan__link"
               >
                 View on Google Maps
               </a>
             </span>
           </div>
-          <h2>Mount Fuji</h2>
-          <div className="japan__date">12 Jan, 2021 - 24 Jan, 2021</div>
+          <h2>{props.title}</h2>
+          <div className="japan__date">{props.date}</div>
           <p className="japan__paragraph">
-            Mount Fuji is the tallest mountain in Japan, standing at 3,776
-            meters (12,380 feet). Mount Fuji is the single most popular tourist
-            site in Japan, for both Japanese and foreign tourists.
+          {props.text}
           </p>
         </div>
       </div>

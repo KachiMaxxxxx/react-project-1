@@ -5,7 +5,8 @@
 }
 
 body {
-  height: 100vh;
+  max-width: 100vw;
+  min-height: 100vh;
   background: whitesmoke;
   color: black;
   border: 1px solid black;
@@ -56,6 +57,9 @@ body {
   display:flex;
   gap:0.5rem;
 }
+.japan__wrapper{
+  margin-top:2rem;
+}
 .img__wrapper{
   height: 168px;
   width: 125px;
@@ -68,7 +72,8 @@ body {
 .japan__img{
   height:100%;
   width:100%;
-  object-fit: cover;
+  object-fit:cover;
+  object-position:center;
 }
 .marker__img{
   width:10px
