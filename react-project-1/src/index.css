@@ -40,14 +40,15 @@ body {
   font-size: 1rem;
 }
 
-.japan__wrapper{
+.entry__wrapper{
   display: flex;
   gap: 1rem;
-  justify-content:center;
-  align-items:center;
+  justify-content:flex-start;
+  align-items:flex-start;
   margin-left: 2rem;
+   margin-top:2rem;
 }
-.japan__text{
+.entry__text{
   display: flex;
   flex-direction:column;
   gap: 1rem;
@@ -57,9 +58,9 @@ body {
   display:flex;
   gap:0.5rem;
 }
-.japan__wrapper{
-  margin-top:2rem;
-}
+
+ 
+
 .img__wrapper{
   height: 168px;
   width: 125px;
@@ -69,7 +70,7 @@ body {
 
 }
 
-.japan__img{
+.entry__img{
   height:100%;
   width:100%;
   object-fit:cover;
@@ -79,7 +80,7 @@ body {
   width:10px
 }
 
-.japan__date{
+.entry__date{
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size:1rem;
   font-weight:700;

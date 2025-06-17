@@ -1,14 +1,14 @@
 export default function Entry(props) {
   return (
     <article>
-      <div className="japan__wrapper">
+      <div className="entry__wrapper">
         <div className="img__wrapper">
-          <img src={props.img.src} alt={props.img.alt} className="japan__img" />
+          <img src={props.img.src} alt={props.img.alt} className="entry__img" />
         </div>
 
-        <div className="japan__text">
+        <div className="entry__text">
           <div className="link__wrapper">
-            <span className="japan__marker">
+            <span className="entry__marker">
               <img
                 src="/src/assets/marker.png"
                 alt="Location"
@@ -17,14 +17,14 @@ export default function Entry(props) {
             </span>
             <span>{props.country}</span>
             <span>
-              <a href={props.link} className="japan__link">
+              <a href={props.googleMapsLink} className="entry__link" >
                 View on Google Maps
               </a>
             </span>
           </div>
           <h2>{props.title}</h2>
-          <div className="japan__date">{props.date}</div>
-          <p className="japan__paragraph">{props.text}</p>
+          <div className="entry__date">{props.date}</div>
+          <p className="entry__paragraph">{props.text}</p>
         </div>
       </div>
     </article>

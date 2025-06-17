@@ -10,12 +10,7 @@ export default function App() {
       {JournalData.map((data) => (
         <Entry
           key={data.id}
-          img={data.img}
-          title={data.title}
-          country={data.country}
-          link={data.googleMapsLink}
-          date={data.dates}
-          text={data.text}
+          {...data}
         />
       ))}
     </>
