@@ -4,15 +4,15 @@ export default function Joke(props) {
   function toggleShown() {
     setIsShown((prevShown) => !prevShown);
   }
-  console.log(isShown);
+ 
   return (
     <div>
       <article>
         <div className="joke__container">
-          <h3 className="joke__setup">{props.setup}</h3>
-          {isShown && <p className="joke__punchline">{props.punchline}</p>}
+          { props.setup ? <h3 className="joke__setup">{props.setup}</h3> : null}
+          {isShown ? <p className="joke__punchline">{props.punchline}</p> : null }
           <button className="button" onClick={toggleShown}>
-            Hide/Show
+            {isShown ? "Hide punchline" : "Show Punchline"}
           </button>
           <br />
           <hr />
